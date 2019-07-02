@@ -1,0 +1,84 @@
+.header-inner {
+	background-color: $dark;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	.header-heading {
+		font-size: 15px;
+		font-weight: 400;
+		&-count {
+			font-size: 15px;
+			font-weight: 400;
+			color: $primary;
+		}
+	}
+	.schedule-block-description {
+		&-text {
+			font-size: 15px;
+			font-weight: 300;
+			color: $white;
+			margin-bottom: 0;
+			&::before {
+				width: 1px;
+				height: 18px;
+				background-color: $gray-100;
+				position: absolute;
+				content: '';
+				margin-left: -9px;
+			}
+			span {
+				font-weight: 400;
+				color: $gray-50;
+			}
+		}
+		&-text-count {
+			font-size: 15px;
+			font-weight: 300;
+			color: $white;
+			margin-bottom: 0;
+			span {
+				font-weight: 400;
+				color: $gray-50;
+			}
+		}
+	
+	}
+	.phone-icon {
+		color: $primary;
+		font-size: 15px;
+	}
+	.info-phone {
+		font-size: 15px;
+		font-weight: 300;
+		letter-spacing: 0.03em;
+		&:hover {
+			color: $primary;
+		}
+	}
+	.info-phone-text {
+		font-size: 15px;
+		letter-spacing: 0.05em;
+		font-weight: 300;
+		color: $gray-75;
+		margin-bottom: 0;
+	}
+	.auth-block {
+		display: flex;
+		.sign-icon {
+			font-size: 16px;
+			margin-right: 15px;
+			&:hover {
+				color: $primary;
+			}
+		}
+		&-link {
+			font-weight: 300;
+			color: $white;
+			font-size: 15px;
+			letter-spacing: 0.025em;
+			margin-bottom: 0;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.auth-block-link {
+	transition: all .4s linear;
+	.auth-link {
+		font-weight: 500;
+		font-size: 15px;
+		color: $white;
+		&::after {
+			content: '\f107';
+			font-family: 'FontAwesome', sans-serif;
+		}
+		&:hover {
+			text-decoration: none;
+			color: $white;
+		}
+	}
+	&-other {
+		background-color:$white;
+		padding: 5px;
+		transition: all .2s ease-in-out;
+		display: none;
+		&:hover {
+			background-color: $gray-150;
+		}
+		.auth-link-other {
+			font-weight: 700;
+			font-size: 15px;
+			text-align: center;
+			color: $secondary;
+			text-transform: uppercase;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.active {
+	display: block;
+}

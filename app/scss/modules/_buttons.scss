@@ -1,0 +1,15 @@
+.btn {
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: $white;
+	&:hover {
+		color: transparent;
+	}
+}
+
+.btn-auth {
+	background-color: transparent;
+	outline: none;
+	border: none;
+}

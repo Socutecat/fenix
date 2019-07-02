@@ -1,0 +1,61 @@
+// container
+$container-max-widths:(
+  xl:1200px
+);
+
+// Color system
+$primary:#ffcb00;
+$secondary:#1f1f23;
+$dark:#363739;
+$gray-50:#dcdbdb;
+$gray-75:#d6d6d6;
+$gray-100:#949494;
+$gray-150:#f6f6f6;
+$white: #ffffff;
+
+// Fonts
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$h1-font-size: 48px;
+$h2-font-size: 36px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+$h6-font-size: 13px;
+$headings-color: $gray-50;
+
+
+$small-font-size: 87.5%;
+$font-size-sm: 0.75rem;
+
+$font-weight-medium: 500 !default;
+$font-weight-normal: 400 !default;
+$font-weight-light:  300 !default;
+$font-weight-bold:   700 !default;
+
+
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: 6px,
+    10: 10px,
+    11: 11px,
+    12: 12px,
+    13: 13px,
+    14: 14px,
+    15: 15px,
+    18: 18px,
+	  20: 20px,
+    22: 22px,
+    30: 30px,
+  ),
+  $spacers
+);
