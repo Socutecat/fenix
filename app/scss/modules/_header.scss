@@ -1,7 +1,7 @@
 .header-inner {
 	background-color: $dark;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	.header-heading {
 		font-size: 15px;
 		font-weight: 400;
@@ -81,4 +81,10 @@
 			}
 		}
 	}
+}
+
+/* media quries */
+
+@media screen and (max-width:768px) {
+	
 }

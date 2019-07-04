@@ -4,36 +4,26 @@
 		font-weight: 500;
 		font-size: 15px;
 		color: $white;
-		&::after {
-			content: '\f107';
-			font-family: 'FontAwesome', sans-serif;
-		}
 		&:hover {
 			text-decoration: none;
-			color: $white;
 		}
 	}
-	&-other {
-		background-color:$white;
-		padding: 5px;
-		transition: all .2s ease-in-out;
-		display: none;
-		&:hover {
-			background-color: $gray-150;
-		}
-		.auth-link-other {
+	.dropdown-menu {
+		text-align: center;
+		padding: 0;
+		z-index: 1000;
+		min-width: 50px;
+		font-weight: 300;
+		.dropdown-item {
 			font-weight: 700;
 			font-size: 15px;
 			text-align: center;
 			color: $secondary;
 			text-transform: uppercase;
 			&:hover {
-				text-decoration: none;
+				background-color: $gray-150;
 			}
 		}
 	}
 }
 
-.active {
-	display: block;
-}

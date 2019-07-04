@@ -1,0 +1,157 @@
+/* card-article */
+
+.card-article {
+	.jumbotron-title{
+		font-weight: 800;
+		text-transform: uppercase;
+		font-size: 25px;
+		color: $secondary;
+		position: relative;
+		&::before {
+			width: 423px;
+			height: 1px;
+			background-color: $gray-350;
+			position: absolute;
+			content: '';
+			top: 50%;
+			left: 0;
+		}
+		&::after {
+			width: 423px;
+			height: 1px;
+			background-color: $gray-350;
+			position: absolute;
+			content: '';
+			top: 50%;
+			right:0;
+		}
+	}
+	.card {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 22px;
+		padding-right: 22px;
+		position: relative;
+		&-img-top-wrapper {
+			max-height: 250px;
+			overflow: hidden;
+			padding: 15px;
+			&:hover {
+				background-color: $gray-250;
+			}
+			.card-fluid {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		.trending {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $primary;
+			color: $secondary;
+			width: 60px;
+			height: 30px;
+			position: absolute;
+			z-index: 1000;
+			top: 0;
+			left: 0;
+			text-transform: uppercase;
+		}
+		.card-body {
+			padding: 0;
+			&-inner {
+				.card-title {
+					color: $secondary;
+					text-decoration: none;
+					font-size: 17px;
+					padding-bottom: 44px;
+					margin-bottom: 0;
+				}
+				p {
+					font-size: 17px;
+					color: $green;
+					text-align: right;
+					margin-bottom: 0;
+					margin-top: 44px;
+
+				}
+				p.color-red {
+					color: $red;
+				}
+			}
+			.card-price {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 35px;
+				h4 {
+					font-weight: 700;
+					text-transform: uppercase;
+					color: $secondary;
+					margin-bottom: 0;
+				}
+				span {
+					color: $secondary;
+					font-size: 17px;
+				}
+				span.icon-price {
+					color: $green;
+				}
+			}
+		}
+			.card-footer {
+				background-color: transparent;
+				border-top: none;
+				padding: 0;
+				margin-top: 35px;
+				text-align: center;
+				
+				&-link {
+					text-decoration: none;
+					background-color: $primary;
+					color: $secondary;
+					padding-left: 65px;
+					padding-right: 65px;
+					padding-top: 15px;
+					padding-bottom: 15px;
+					// white-space: nowrap;
+					font-size: 16px;
+					font-weight: 700;
+					display: inline-block;
+					cursor: pointer;
+				}
+				.card-footer-link.secondary-50 {
+					background-color: $secondary-50;
+				}
+				.card-footer-link.inactive {
+					background-color: $gray-300;
+					&:hover{
+						color: $white;
+					}
+				}
+				&-quick {
+					text-decoration: none;
+					background-color: transparent;
+					color: $secondary;
+					width: 100%;
+					padding-top: 15px;
+					padding-bottom: 15px;
+					white-space: nowrap;
+					margin-top: 15px;
+					display: inline-block;
+					cursor: pointer;
+					font-size: 16px;
+					font-weight: 700;
+					border: 1px solid $primary;
+					&:hover {
+						background-color: $primary;
+					}
+					span {
+						display: block;
+					}
+				}
+			}
+
+	}
+}

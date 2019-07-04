@@ -3,11 +3,14 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800" rel="stylesheet">
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<meta name=viewport content="width=device-width height=device-height user-scalable=yes">
 	<title>Market Place</title>
+
 </head>
 
 <body>
@@ -21,16 +24,17 @@
 							<h6 class="header-heading mr-10">USD</h6>
 							<span class="header-heading-count">28.17</span>
 						</div>
-						<div class="col-12 col-md-5 d-flex">
-							<div class="schedule-block pr-22">
-								<div class="schedule-block-description d-flex">
+						<div class="col-12 col-md-5 d-flex flex-column flex-lg-row">
+							<div class="schedule-block pr-0 pr-lg-22 pb-10 pb-lg-0">
+								<div class="schedule-block-description d-flex flex-column flex-lg-row">
 									<div class="avatar-block">
-										<img src="./img/copy.png" alt="" class="schedule-avatar pr-13">
+										<img src="./img/copy.png" alt="" class="schedule-avatar pr-0 pr-lg-13">
 									</div>
-									<p class="schedule-block-description-text-count"><span>Пн-Пт.</span>8:00-21:00</p>
+									<p class="schedule-block-description-text-count pt-10 pt-lg-0">
+										<span>Пн-Пт.</span>8:00-21:00</p>
 								</div>
 							</div>
-							<div class="schedule-block pr-22">
+							<div class="schedule-block pr-0 pr-lg-22 pb-10 pb-lg-0">
 								<div class="schedule-block-description d-flex">
 									<p class="schedule-block-description-text"><span>Сб.</span>8:00-21:00</p>
 								</div>
@@ -41,41 +45,651 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-3">
+						<div class="col-12 col-md-3 flex-column flex-lg-row flex-wrap mt-15 mt-lg-0">
 							<span class="fa fa-phone phone-icon"></span>
-							<a href="callto:+0-800-338-571" class="info-phone">+0-800-338-571</a>
+							<a href="callto:+0-800-338-571" class="info-phone ">0-800-338-571</a>
 							<p class="info-phone-text">Бесплатно по Украине</p>
 						</div>
-						<div class="col-12 col-md-3">
-							<div class="auth-block d-flex align-items-center ">
-								<span class="fa-sign-in fa sign-icon"></span>
-								<a href="#" class="auth-block-link">Вход/</a>
-								<a href="#" class="auth-block-link">Регистрация</a>
-								<div class="auth-block-link ml-30">
-									<a href="#" class="auth-link">Ru</a>
-									<div class="auth-block-link-other">
-										<a href="#" class="auth-link-other">Ru</a>
+						<div class="col-12 col-md-3 mt-15 mt-lg-0">
+							<div
+								class="auth-block d-flex fl flex-column flex-lg-row align-items-center align-items-lg-baseline">
+								<span class="fa-sign-in fa sign-icon mx-auto"></span>
+								<a href="#" class="auth-block-link ">Вход/</a>
+								<a href="#" class="auth-block-link mr-0 mr-lg-30 ">Регистрация</a>
+								<div class="dropdown auth-block-link mx-auto mt-6 mt-lg-0">
+									<a class=" dropdown-toggle auth-link" href="#" role="button" id="dropdownMenuLink"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Ru
+									</a>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+										<a class="dropdown-item auth-link-other" href="#">Ru</a>
+										<a class="dropdown-item auth-link-other" href="#">Ua</a>
 									</div>
-									<div class="auth-block-link-other">
-										<a href="#" class="auth-link-other">Ua</a>
-									</div>
-								</div>								
+								</div>
 							</div>
 						</div>
-						<!-- /.container -->
+					</div>
+				</div>
 			</section>
 			<!-- /.header-inner -->
 		</header>
 		<!-- end header -->
+		<section class="navigation">
+			<div class="container d-flex">
+				<nav class="navbar p-0 navbar-expand-lg navbar-white">
+					<button class="navbar-toggler dropdown" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						<span class="navbar-toggler-icon"><i class="fa fa-bars pr-6" aria-hidden="true"></i></span>
+						Каталог Товаров
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<li class="dropdown-item nav-link">
+							<div class="nav-link-block">
+								<img src="./img/11.png" class="nav-ava pr-22" alt="ava">
+								<p class="nav-link-block-text">Электроинструмент</p>
+
+							</div>
+						</li>
+						<li class="dropdown-item nav-link">
+							<div class="nav-link-block">
+								<img src="./img/img2.png" class="nav-ava pr-22" alt="ava">
+								<p class="nav-link-block-text"> <span>Аккумуляторный
+										инструмент</span></p>
+							</div>
+						</li>
+						<li class="dropdown-item nav-link">
+							<div class="nav-link-block">
+								<img src="./img/img3.png" class="nav-ava pr-22" alt="ava">
+								<p class="nav-link-block-text">Садовый инструмент</p>
+							</div>
+						</li>
+						<li class="dropdown-item nav-link">
+							<div class="nav-link-block">
+								<img src="./img/img4.png" class="nav-ava pr-22" alt="ava">
+								<p class="nav-link-block-text">Оборудование</p>
+							</div>
+						</li>
+						<li class="dropdown-item nav-link">
+							<div class="nav-link-block">
+								<img src="./img/img5.png" class="nav-ava pr-22" alt="ava">
+								<p class="nav-link-block-text">Запчасти</p>
+							</div>
+						</li>
+						<li class="dropdown-item nav-link">
+							<div class="nav-link-block">
+								<img src="./img/img6.png" class="nav-ava pr-22" alt="ava">
+								<p class="nav-link-block-text">Акции</p>
+							</div>
+						</li>
+						<li class="dropdown-item nav-link-none ">
+							<div class="nav-link-block">
+								<img src="./img/img7.png" class="nav-ava pr-22" alt="ava">
+								<p class="nav-link-block-text">Уцененные товары</p>
+							</div>
+							<div class="triangle"></div>
+						</li>
+					</ul>
+				</nav>
+				<form action="action.php" class="contact-form ml-18 mr-25">
+					<input type="text" name="myName" required="required" placeholder="Введите для поиска"
+						id="input-file" class="input-file">
+					<button type="submit" class="form-button fa fa-search"></button>
+				</form>
+				<div class="description-wrapper">
+					<div class="description-wrapper-inner">
+						<div class="description-wrapper-inner-ava">
+							<span class="fa-balance-scale fa"></span>
+						</div>
+						<p class="description-wrapper-inner-text">Сравнить</p>
+					</div>
+					<div class="description-wrapper-inner">
+						<div class="description-wrapper-inner-ava">
+							<span class="fa-shopping-cart fa"></span>
+						</div>
+						<p class="description-wrapper-inner-text">Корзина</p>
+						<span class="description-count">7</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- card-section -->
+		<section class="card-article pt-64">
+			<div class="container">
+				<h1 class="jumbotron-title text-center mb-40">Лидеры продаж</h1>
+				<div class="row">
+					<div class="owl-carousel">
+						<div class="item d-flex">
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-1.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Шлифмашинка угловая
+													Минск МТ-3 МШМ-1170</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>695 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link">В корзину</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-3.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Шуруповёрт
+													аккумуляторный Start Pro
+													SCD2-12</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>695 грн</h4>
+											<span class="fa fa-balance-scale icon-price"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link secondary-50">В корзину</a>
+									</div>
+									<div class="card-footer mt-0">
+										<a href="#" class="card-footer-quick"> <span>Купить в 1 клик</span> </a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-2.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Пила циркулярная Start
+													Pro SCS - 2500</a>
+											</h5>
+											<p class="color-red">нет в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>2580 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link inactive">В корзину</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/три четверти.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Дрель электрическая
+													Start Pro SED-920</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>980 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link">В корзину</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item d-flex">
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-1.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Шлифмашинка угловая
+													Минск МТ-3 МШМ-1170</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>695 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link">В корзину</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-3.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Шуруповёрт
+													аккумуляторный Start Pro
+													SCD2-12</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>695 грн</h4>
+											<span class="fa fa-balance-scale icon-price"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link secondary-50">В корзину</a>
+									</div>
+									<div class="card-footer mt-0">
+										<a href="#" class="card-footer-quick"> <span>Купить в 1 клик</span> </a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-2.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Пила циркулярная Start
+													Pro SCS - 2500</a>
+											</h5>
+											<p class="color-red">нет в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>2580 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link inactive">В корзину</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/три четверти.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Дрель электрическая
+													Start Pro SED-920</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>980 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link">В корзину</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item d-flex">
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-1.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Шлифмашинка угловая
+													Минск МТ-3 МШМ-1170</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>695 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link">В корзину</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-3.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Шуруповёрт
+													аккумуляторный Start Pro
+													SCD2-12</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>695 грн</h4>
+											<span class="fa fa-balance-scale icon-price"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link secondary-50">В корзину</a>
+									</div>
+									<div class="card-footer mt-0">
+										<a href="#" class="card-footer-quick"> <span>Купить в 1 клик</span> </a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-2.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Пила циркулярная Start
+													Pro SCS - 2500</a>
+											</h5>
+											<p class="color-red">нет в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>2580 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link inactive">В корзину</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/три четверти.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Дрель электрическая
+													Start Pro SED-920</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>980 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link">В корзину</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item d-flex">
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-1.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Шлифмашинка угловая
+													Минск МТ-3 МШМ-1170</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>695 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link">В корзину</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-3.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Шуруповёрт
+													аккумуляторный Start Pro
+													SCD2-12</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>695 грн</h4>
+											<span class="fa fa-balance-scale icon-price"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link secondary-50">В корзину</a>
+									</div>
+									<div class="card-footer mt-0">
+										<a href="#" class="card-footer-quick"> <span>Купить в 1 клик</span> </a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/card-img-2.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Пила циркулярная Start
+													Pro SCS - 2500</a>
+											</h5>
+											<p class="color-red">нет в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>2580 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link inactive">В корзину</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<div class="card-img-top-wrapper">
+										<img src="./img/три четверти.png" alt="trending" class="card-fluid">
+									</div>
+									<div class="trending">
+										Хит
+									</div>
+									<div class="card-body">
+										<div class="card-body-inner">
+											<h5>
+												<a href="#" class="card-title">Дрель электрическая
+													Start Pro SED-920</a>
+											</h5>
+											<p>в наличии</p>
+										</div>
+										<div class="card-price">
+											<h4>980 грн</h4>
+											<span class="fa fa-balance-scale"></span>
+										</div>
+									</div>
+									<div class="card-footer">
+										<a href="#" class="card-footer-link">В корзину</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="media-object">
+			<div class="container">
+				<h1 class="jumbotron-title text-center mb-40">Видеообзоры</h1>
+				<div class="row">
+					<div class="col-3">							
+						<div class="media">
+							<div class="img-box">
+									<a data-fancybox="gallery" href="https://youtu.be/xGnaPrU7NMo"><img src="./img/video-1.jpg" alt="video"></a>
+									<div class="map-overlay">
+											<div class="round">
+												<i class="fa fa-play icon-video"></i>
+											</div>							
+									</div>
+							</div>
+							<div class="media-body mt-15">
+								<h5 class="mt-0">Обзор дрели-шуруповерта
+									Bosch GSR 10.8-2-LI</h5>
+							</div>
+						</div>					
+					</div>
+					<div class="col-3">							
+							<div class="media">
+								<div class="img-box">
+										<a data-fancybox="gallery" href="https://youtu.be/xGnaPrU7NMo"><img src="./img/video-2.jpg" alt="video"></a>
+										<div class="map-overlay">
+												<div class="round">
+													<i class="fa fa-play icon-video"></i>
+												</div>							
+										</div>
+								</div>
+								<div class="media-body mt-15">
+									<h5 class="mt-0">Обзор ударной дрели 
+											Makita HP1640I</h5>
+								</div>
+							</div>					
+					</div>
+					<div class="col-3">							
+							<div class="media">
+								<div class="img-box">
+										<a data-fancybox="gallery" href="https://youtu.be/xGnaPrU7NMo"><img src="./img/video-3.jpg" alt="video"></a>
+										<div class="map-overlay">
+												<div class="round">
+													<i class="fa fa-play icon-video"></i>
+												</div>							
+										</div>
+								</div>
+								<div class="media-body mt-15">
+									<h5 class="mt-0">Обзор дрели Интерскол 
+											Д-16/1050Р2</h5>
+								</div>
+							</div>					
+						</div>
+						<div class="col-3">							
+								<div class="media">
+									<div class="img-box">
+											<div class="map-overlay">
+													<div class="round">
+														<i class="fa fa-play icon-video"></i>
+													</div>							
+											</div>
+											<a data-fancybox="gallery" href="https://youtu.be/xGnaPrU7NMo"><img src="./img/video-4.jpg" alt="video"></a>										
+									</div>
+									<div class="media-body mt-15">
+										<h5 class="mt-0">Обзор дрели-шуруповёрта 
+												Bosch GSR 18-2-LI Plus Обзор  </h5>
+									</div>
+								</div>					
+							</div>
+				</div>
+			</div>
+		</section>
+
 	</div>
 	<!-- /.page -->
 
 	<!-- jquery -->
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- fancybox -->
+	<script src="js/jquery.fancybox.min.js"></script>
 	<!-- bootstrap  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="js/bootstrap.min.js"></script>
 	<!-- site scripts -->
 	<script src="js/scripts.js"></script>
