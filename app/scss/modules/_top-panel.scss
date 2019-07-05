@@ -1,0 +1,58 @@
+.top-panel {
+    &-list {
+        display: flex;
+        &-item {
+            list-style: none;
+            margin-right: 50px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            &-link {
+                font-size: 15px;
+                font-weight: 700;
+                color: $secondary;
+                &:hover {
+                    text-decoration: none;
+                    color: $secondary;
+                }
+            }
+            .top-panel-list-item-link.active {
+                &:hover {
+                    color: $red;
+                }
+            }
+            .dropdown-menu {
+                text-align:left;
+                padding: 0;
+                z-index: 1000;
+                min-width: 100px;
+                font-weight: 300;
+                .dropdown-item {
+                    font-weight: 300;
+                    font-size: 15px;
+                    text-align:left;
+                    color: $secondary;
+                    &:hover {
+                        background-color: $gray-150;
+                    }
+                }
+            }
+        }
+    }
+    .top-panel-link-separator {
+        padding: 17px 30px 17px 25px;
+        background-color: transparent;
+        color: $secondary;
+        font-size: 13px;
+        font-weight: 600;
+        border: 1px solid $secondary;
+        text-decoration: none;
+        transition: all .2s ease-in;
+        &:hover {
+            background-color: $green;
+            color: $white;
+            border: none;
+            transition: all .2s ease-out;
+        }
+    }
+}

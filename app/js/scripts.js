@@ -17,6 +17,7 @@ function carousel_init() {
 		loop:true,
 		dots:true,
 		autoplay:false,
+		responsiveClass:true,
 	});
 }
 
