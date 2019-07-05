@@ -13581,7 +13581,8 @@ body {
   border: 1px solid #1f1f23;
   text-decoration: none;
   -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in; }
+  transition: all .2s ease-in;
+  white-space: nowrap; }
   .top-panel .top-panel-link-separator:hover {
     background-color: #45a13e;
     color: #ffffff;
@@ -13623,8 +13624,6 @@ body {
     filter: grayscale(1);
     -webkit-transition: all .3s linear;
     transition: all .3s linear; }
-    .brand-review .brand-inner:last-child {
-      margin-bottom: 0; }
     .brand-review .brand-inner:hover {
       -webkit-filter: grayscale(0);
       filter: grayscale(0); }
