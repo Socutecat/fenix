@@ -12933,7 +12933,7 @@ body {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); }
     @media screen and (max-width: 768px) {
       .navigation .dropdown-menu {
-        min-width: 290px; } }
+        min-width: 275px; } }
     .navigation .dropdown-menu .nav-link {
       padding-top: 17px;
       padding-bottom: 17px;
@@ -13539,6 +13539,13 @@ body {
           height: 55px;
           line-height: 55px;
           color: #ffffff; }
+  .media-object .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (max-width: 768px) {
+      .media-object .item {
+        display: inline-block; } }
 
 .top-panel-list {
   display: -webkit-box;

@@ -24,7 +24,7 @@ function carousel_init() {
 		nav:true,
 		loop:true,
 		dots:true,
-		autoplay:false,
+		autoplay:true,
 		responsiveClass:true,
 	});
 }
